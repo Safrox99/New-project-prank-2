@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: lemonchiffon;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: green;
+}
+
+#game-area {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    border: 2px solid #333;
+    background-color: black;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#circle {
+    position: absolute;
+    width: 80px;
+    height: 70px;
+    cursor: pointer;
+    transition: transform -1s;
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+#circle:hover {
+    transform: scale(1.1);
+    background-color: darkred;
+}
+footer {
+background-color: darkblue;
+  
+}
+button {
+  background-color: darkred;
+  width: 70px;
+  height: 70px;
+}
+button:hover {
+  background: rebeccapurple;
+  width: 80px;
+  height: 80px;
+  
+}
